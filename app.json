@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/order_list/order_list",
+    "pages/search/search",
+    "pages/eval/eval",
+    "pages/product/product",
+    "pages/make/make",
+    "pages/address/address",
+    "pages/date/date",
+    "pages/feedback/feedback",
+    "pages/service/service",
+    "pages/price_list/price_list",
+    "pages/about/about",
+    "pages/share/share",
+    "pages/order_info/order_infor",
+    "pages/md/md",
+    "pages/my_acc/my_acc",
+    "pages/agreement/agreement",
+    "pages/coupon/coupon",
+    "pages/pay/pay",
+    "pages/help/help",
+    "pages/sk_card/sk_card",
+    "pages/password/password",
+    "pages/shoes/shoes",
+    "pages/public/public",
+    "pages/receive/receive",
+    "pages/media/media",
+    "pages/give/give"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#312e43",
+    "navigationBarTitleText": "宿洗",
+    "navigationBarTitleStyle": "#000000",
+    "navigationBarTextStyle": "#666"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/index.png",
+        "selectedIconPath": "img/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "img/user.png",
+        "selectedIconPath": "img/user1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
