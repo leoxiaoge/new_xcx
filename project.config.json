@@ -1,0 +1,194 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.5.4",
+	"appid": "wxeefecafcd02450af",
+	"projectname": "%E5%AE%BF%E6%B4%97%E4%B8%8A%E7%BA%BF",
+	"condition": {
+		"search": {
+			"current": 1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "产品",
+					"pathName": "pages/product/product",
+					"query": "id=5"
+				},
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客服消息",
+					"pathName": "pages/wechat/wechat",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约取衣",
+					"pathName": "pages/make/make",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "地址",
+					"pathName": "pages/address/address",
+					"query": "types=1"
+				},
+				{
+					"id": 6,
+					"name": "时间选择",
+					"pathName": "pages/date/date",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/feedback/feedback",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "服务介绍",
+					"pathName": "pages/service/service",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "价格目录",
+					"pathName": "pages/price_list/price_list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分享",
+					"pathName": "pages/share/share",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "订单列表",
+					"pathName": "pages/order_list/order_list",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "订单详情",
+					"pathName": "pages/order_info/order_infor",
+					"query": "id=2479"
+				},
+				{
+					"id": -1,
+					"name": "md",
+					"pathName": "pages/md/md",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的账户",
+					"pathName": "pages/my_acc/my_acc",
+					"query": ""
+				},
+				{
+					"id": 15,
+					"name": "优惠券",
+					"pathName": "pages/coupon/coupon",
+					"query": ""
+				},
+				{
+					"id": 16,
+					"name": "支付页面",
+					"pathName": "pages/pay/pay",
+					"query": "id=2488"
+				},
+				{
+					"id": 17,
+					"name": "宿卡",
+					"pathName": "pages/sk_card/sk_card",
+					"query": ""
+				},
+				{
+					"id": 18,
+					"name": "密码页",
+					"pathName": "pages/password/password",
+					"query": "types=1"
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/feedback/feedback",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分享",
+					"pathName": "pages/share/share",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "鞋子",
+					"pathName": "pages/shoes/shoes",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "公益",
+					"pathName": "pages/public/public",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "关于宿洗",
+					"pathName": "pages/about/about",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "宿卡接收",
+					"pathName": "pages/receive/receive",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "媒体",
+					"pathName": "pages/media/media",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "宿卡贈送",
+					"pathName": "pages/give/give",
+					"query": ""
+				}
+			]
+		}
+	}
+}
