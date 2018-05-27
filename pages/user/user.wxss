@@ -1,0 +1,236 @@
+/* pages/user/user.wxss */
+.hr{
+  height: 30rpx;
+  background: #f3f7fa;
+}
+.top{
+  height: 300rpx;
+   background: url('http://www.qiaolibeilang.com/public/new_xcx/bg-user.jpg'); 
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+  /* border-bottom: 1rpx solid #bbafb2; */
+}
+.top-left{
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  color: #1ca6f8;
+  line-height: 1;
+}
+.top-left image{
+  width: 150rpx;
+  height: 150rpx;
+  background: #e5e5e5;
+  border-radius: 50%;
+  margin-bottom: 30rpx;
+}
+/*ball  */
+.ball-warp{
+  padding: 0 30rpx;
+  /* border-bottom: 1rpx solid #e4edff; */
+}
+.ball-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #e1e1e1;
+  box-sizing: border-box;
+}
+.ball-left{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #666;
+}
+.ye-price{
+  color: #1ca6f8;
+}
+.ball-left image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 16rpx;
+}
+.ball-right{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #1ca6f8;
+}
+.ball-right image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.ye-price{
+  padding-left: 10rpx;
+}
+.ball-3-warp,.ball-2-warp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 690rpx;
+  margin: 0 auto;
+
+}
+.ball-3{
+  margin: 30rpx 0;
+  height: 80rpx;
+  box-sizing: border-box;
+  width: 230rpx;
+  position: relative;
+}
+.ball-3:nth-child(2){
+  border-right: 1rpx solid #e1e1e1;
+  border-left: 1rpx solid #e1e1e1;
+}
+.ball-main-top{
+  font-size: 26rpx;
+  color: #151515;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  line-height: 1;
+}
+.ball-main-top image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.ball-main-bom,.ball-main-bom-none{
+  font-size: 28rpx;
+  color: #19a930;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  line-height: 1;
+}
+.ball-main-bom-none{
+  color: #999;
+}
+/* .ball-2{
+  box-sizing: border-box;
+  height: 90rpx;
+  width: 50%;
+  border-right: 1rpx solid #e1e1e1;
+  margin: 20rpx 0;
+  position: relative;
+}
+.ball-2:nth-last-child(1){
+  border-right: none;
+} */
+/* .ball-hr{
+  height: 16rpx;
+  background: #f3f7fa;
+  width: 100%;
+  padding: 0 20rpx;
+  position: relative;
+  left: -20rpx;
+} */
+.order-bar{
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  color: #333;
+  font-size: 30rpx;
+  /* border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff; */
+}
+.order-bar image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right:14rpx; 
+}
+
+/*bar  */
+.bar-warp{
+  /* border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff; */
+}
+.bar-bar{
+  padding: 0 30rpx;
+}
+.bar-bar-con{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.bar-bar:nth-last-child(1) .bar-bar-con{
+  border-bottom: none;
+}
+.bar-left{
+  font-size: 30rpx;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bar-left image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 14rpx;
+}
+ .bar-left .hot-img{
+   margin-left: 14rpx;
+} 
+.bar-right{
+  width: 42rpx;
+  height: 42rpx;
+}
+/*tel  */
+.tel-warp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff; */
+  padding: 16rpx 0;
+}
+.tel-warp > navigator,.tel-warp > button{
+  width: 50%;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #666;
+  box-sizing: border-box;
+}
+.tel-warp > navigator:nth-child(1){
+  border-right: 1rpx solid #e5e5e5;
+}
+.tel-warp image{
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 20rpx;
+}
+.wechat::after{
+  border: none;
+}
+.wechat{
+  background: #fff;
+  border: none;
+}
+.order-list{
+  display: flex;
+  align-items: center;
+}
+/* .order-img{
+  width: 14rpx;
+  height: 14rpx;
+  margin-right: 14rpx;
+} */

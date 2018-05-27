@@ -1,0 +1,21 @@
+<view class="coupon-ul" wx:if="{{card.length > 0}}">
+  <view class="coupon-li" wx:for="{{card}}" bindtap='select' wx:for-item="i" wx:for-index="ind" data-index="{{ind}}" wx:if="{{i.status_dec != '已过期'}}">
+    <view class="cou-left">
+      <view class="h-con">
+        <view class="cou-price">￥{{i.discount}}</view>
+        <view class="cou-price-text">{{i.dec}}</view>
+      </view>
+    </view>
+    <view class="cou-right">
+      <view class="h-con-r">
+        <view>{{i.status_dec}}到期</view>
+        <view>{{i.dec}}{{i.discount}}元</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--没有优惠券时显示  -->
+<view class='none-warp' wx:if="{{card.length == 0}}">
+  <image class='none-img' src='https://www.qiaolibeilang.com/public/new_xcx/none.png'></image>
+  <view class='no-coupon'>暂无可用优惠券</view>
+</view>

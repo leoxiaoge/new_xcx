@@ -1,0 +1,86 @@
+<!--index.wxml-->
+<!--search  -->
+<view class="search-warp {{scroll_set == 1  ? 'scroll-set':''}}" wx:if="{{scroll_set == 1}}">
+  <view class='map-address'>
+    <image class='map' src='../../img/map.svg'></image>
+    <view>星港同创汇天玑座408星港同创汇天玑座408</view>
+    <image class='right' src='../../img/right.svg'></image>
+  </view>
+  <view class='search-input'>
+    <image src='../../img/search.svg'></image>
+    <input type='text' bindtap='to_search' disabled='true' placeholder='洗衬衫'></input>
+  </view>
+</view>
+<scroll-view class='index-scroll' scroll-y bindscroll="scroll">
+  <!--banner  -->
+  <swiper class='index-top' indicator-dots="true" indicator-color="rgba(0,0,0,0.4)" indicator-active-color="#1ca6f8" autoplay="true" interval="5000" duration="500" circular="true">
+    <swiper-item wx:for="{{index.data.data.banner}}" wx:for-index="ind" wx:for-item="i">
+      <navigator url="/pages/{{bannerlink[ind]}}" open-type="navigateTo">
+        <image src="{{i.img}}" class="slide-image banner" />
+      </navigator>
+    </swiper-item>
+  </swiper>
+  <!-- <view class='hr'></view> -->
+  <!-- 专业清洗 -->
+  <view class='modular'>
+    <view class='modular-title'>—— 专业清洗 ——</view>
+    <view class='modular-min-4'>
+      <navigator wx:for="{{menu}}" wx:for-item="i" url="{{i[3] == 0 ? '/pages/product/product?id='+i[2]:''}}" open-type="navigateTo" hover-class="hover" bindtap="{{i[3] == 0 ? '':'opened'}}" style="background-image: url('http://www.qiaolibeilang.com/public/new_xcx/bks-{{i[1]}}.png')">
+        <view class='name'>{{i[0]}}</view>
+        <!-- <image src='http://www.qiaolibeilang.com/public/new_xcx/ind-{{i[1]}}.png'></image>  -->
+      </navigator>
+    </view>
+  </view>
+  <view class='hr'></view>
+  <!-------------------------优惠专区 ------------------------>
+  <!-- <view class='act-warp'>  -->
+  <view class='act-warp'>
+    <view class='modular-title'>—— 优惠专区 ——</view>
+    <view class='act-main'>
+      <navigator hover-class='none' url="/pages/sk_card/sk_card" open-type="navigateTo">
+        <view class='act-mark'></view>
+      </navigator>
+      <navigator hover-class='none' url="/pages/give/give" open-type="navigateTo">
+      <!--  /pages/shoes/shoes -->
+        <view class='act-mark'>
+          <view></view>
+        </view>
+        <!--每个人心中<view class='br'></view>都有一双忘不掉的鞋子  -->
+      </navigator>
+    </view>
+  </view>
+  <!-- </view>  -->
+  <view class='hr'></view>
+  <!-- 介绍专区 -->
+  <view class='footer-bar'>
+    <navigator wx:for="{{menu2}}" url='/pages/{{i[1]}}/{{i[1]}}' open-type="navigateTo" wx:for-item="i" wx:for-index="ind" hover-class='hover' bindtap="{{i[2] != '' ? 'opened':''}}">
+      <view class='img-warp'>
+        <image src='../../img/index-{{ind+1}}.svg'></image>
+      </view>
+      <view>{{i[0]}}</view>
+    </navigator>
+  </view>
+  <view class='hr'></view>
+  <!--评价专区  -->
+  <view class='eval-warp'>
+    <view class='modular-title'>—— 评价专区 ——</view>
+    <view class='eval-con'>
+      <swiper class='eval-swiper' circular="true">
+        <swiper-item wx:for="{{index.data.data.comment}}" wx:for-index="ind" wx:for-item="i">
+          <view class='eval-main'>
+            <view class='eval-left'></view>
+            <view class='eval-main-con'>
+              <view class='eval-tel'>{{i.phone}}</view>
+              <view class='eval-text'>{{i.comment}}</view>
+              <view class='eval-time'>{{i.time}}</view>
+            </view>
+            <view class='eval-right'></view>
+          </view>
+        </swiper-item>
+      </swiper>
+      <view class='eval-lang'>
+        <navigator url="/pages/eval/eval" open-type="navigateTo" hover-class="hover">[查看更多]</navigator>
+      </view>
+    </view>
+  </view>
+</scroll-view>

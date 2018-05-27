@@ -1,0 +1,143 @@
+/* pages/make/make.wxss */
+@import '../search/search.wxss';
+
+.hr {
+  height: 30rpx;
+  background: #f3f7fa;
+}
+.history-tip{
+  /* border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff; */
+  margin-top: 0px;
+}
+.ava{
+  border: 1rpx solid #1ca6f8;
+  color: #1ca6f8;
+}
+.address-warp{
+  padding: 30rpx 30rpx;
+  /* border-width: 6rpx 0px 6rpx 0px; */
+  /* border-image: url('http://www.qiaolibeilang.com/public/new_xcx/address-border.jpg') 8 8 8 round; */
+  /* border-style: solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.address-right{
+  width: 40rpx;
+  height: 40rpx;
+}
+.name-tel{
+  color: #333;
+  font-size: 30rpx;
+  display: flex;
+}
+.name-tel .name{
+  margin-right: 30rpx;
+}
+.address-text{
+  font-size: 26rpx;
+  padding-top: 20rpx;
+  color: #666;
+}
+.message{
+  box-sizing: border-box;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align:middle;
+  padding-right: 20rpx;
+  font-size: 26rpx;
+  text-align: justify;
+  color: #666;
+}
+.make-warp{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #f3f7fa;
+  width: 100%;
+  height: 100%;
+}
+.sub-btn,.sub-btn::after{
+  width: 690rpx;
+  height: 100rpx;
+  margin-top: 70rpx;
+  background: #1ca6f8;
+  color: #fff;
+  border:none;
+  font-size: 36rpx;
+}
+.xzdz{
+  color: #999;
+  font-size: 28rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/*取衣送衣  */
+.times-warp{
+  background: #fff;
+  border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff;
+  display: flex;
+}
+.times-warp>navigator{
+  width: 50%;
+  box-sizing: border-box;
+  border-right: 1rpx solid #e4edff;
+  padding: 20rpx;
+  margin: 20rpx 0;
+}
+.times-warp>navigator:nth-last-child(1){
+  border-right: none;
+}
+.time-top{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1;
+  font-size: 28rpx;
+  color: #666;
+}
+.time-main{
+  height: 60rpx;
+  color: #1ca6f8;
+  border-top: 1rpx solid #e5e5e5;
+  margin: 20rpx 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+}
+/*改版  */
+.screct-time{
+  border-top: 1rpx solid #e5e5e5;
+  /* border-bottom: 1rpx solid #e5e5e5; */
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  line-height: 1;
+  color: #999;
+  padding: 30rpx;
+}
+.remarks{
+  background: #fff;
+  width: 100%;
+  height: 180rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx;
+  color: #666;
+}
+/* .address-time{
+  padding: 0 30rpx;
+  background: #fff;
+} */

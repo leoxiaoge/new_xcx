@@ -1,0 +1,6 @@
+/* pages/public/public.wxss */
+.pubilc-img{
+  display: block;
+  width: 100%;
+  height: 4929rpx; 
+}

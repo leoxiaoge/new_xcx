@@ -1,0 +1,32 @@
+/* help.wxss */
+.title{
+  height: 94rpx;
+  background: #fff;
+  color: #1ca6f8;
+  font-size: 36rpx;
+  font-family: "微软雅黑";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help-bar{
+  font-family: "微软雅黑";
+}
+.bar-title{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  height: 58rpx;
+  background: #f3f7fa;
+  color: #1ca6f8;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.bar-text{
+  padding: 30rpx;
+  background: #fff;
+  color: #333;
+  line-height: 42rpx;
+  font-size: 26rpx;
+  text-align:justify;
+}

@@ -1,0 +1,30 @@
+<!--pages/give/give.wxml-->
+<view class='give-warp'>
+  <view class='card-warp'>
+    <view class='card'>
+      <view class='card-name'></view>
+      <view class='card-price'></view>
+    </view>
+    <view class='card-btn'>
+      <view bindtap='pay_sk'>购买</view>
+      <view bindtap='mark'>赠送</view>
+    </view>
+  </view>
+  <!--  -->
+  <view class='tec-warp'>
+    <view class='tec-top'>
+      <view class='top-title'>赠送流程</view>
+      <view class='top-hr'></view>
+    </view>
+  </view>
+  <!--mark  -->
+  <view class='tec-mark' wx:if="{{send_mark == 1}}">
+    <view class='tec-main'>
+      <view class='tec-close' hover-class='hover' bindtap='mark'>x</view>
+      <input class='tec-input' type='number' maxlength='11' placeholder='填写对方手机号' bindinput='pnone_number'></input>
+      <view class='tec-tip'>此处填写心意卡接收者手机号码，通过下方“赠送”按钮发送链接给对方，对方点开链接获取短信验证码即可赠送成功。</view>
+      <button class='tec-btn' open-type="share">赠送</button>
+    </view>
+  </view>
+  <!--  -->
+</view>

@@ -1,0 +1,428 @@
+/* pages/order_list/order_list.wxss */
+.slide-image {
+  width: 100%;
+}
+
+.tab .active, .nav-warp .active {
+  color: #1ca6f8;
+  /*background-color: #e25450;*/
+}
+
+.nav-warp .active {
+  color: #1ca6f8;
+  border-bottom: 1rpx solid #1ca6f8;
+}
+
+.nav-warp {
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  overflow: hidden;
+}
+
+.nav-warp .tab {
+  text-align: left;
+  padding-left: 15rpx;
+}
+
+.tab-txt {
+  text-align: center;
+  line-height: 90rpx;
+  color: #333;
+  font-size: 32rpx;
+  width: 25%;
+  float: left;
+  height: 90rpx;
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+}
+
+.tab {
+  text-align: center;
+  border-radius: 30rpx;
+  margin-right: 10rpx;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.order {
+  width: 100%;
+  float: left;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin: 1rpx;
+}
+
+.order_a {
+  float: left;
+  border-bottom: 1rpx solid #e5e5e5;
+  font-family: "微软雅黑";
+  margin: 0rpx 30rpx;
+  padding: 30rpx 0rpx;
+  box-sizing: border-box;
+}
+
+.order_eval_e {
+  margin-left: 10rpx;
+}
+
+.order_none {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.order_none_img {
+  width: 117rpx;
+  height: 140rpx;
+  margin: auto;
+  text-align: center;
+}
+
+.order_none_tex {
+  font-size: 24rpx;
+  color: #999;
+  float: left;
+  width: 100%;
+  line-height: 24rpx;
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.order_evalb {
+  width: 51%;
+  height: 58rpx;
+  border: 1rpx solid #18b4ed;
+  font-size: 15px;
+  border-radius: 0.2rem;
+  color: #18b4ed;
+  text-align: center;
+  line-height: 58rpx;
+  margin-bottom: 30rpx;
+}
+
+
+
+
+
+
+
+
+.box {
+  /*width: 100%;*/
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.order_info {
+  display: flex;
+  flex-direction: column;
+  width: 500rpx;
+}
+
+.order_num {
+  font-size: 30rpx;
+  color: #333;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.order_time {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 24rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+}
+
+.order_text {
+  font-size: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  color: #666;
+  margin-top: 20rpx;
+  width: 500rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.order_price {
+  font-size: 24rpx;
+  color: #1ca6f8;
+  height: 24rpx;
+  line-height: 24rpx;
+  margin-top: 22rpx;
+}
+
+.order_type {
+  font-size: 26rpx;
+  width: 190rpx;
+  color: #1ca6f8;
+  text-align: right;
+}
+
+.order_eval_s {
+  float: left;
+}
+
+.order_eval {
+  margin-left: 4rpx;
+  margin-bottom: 30rpx;
+}
+
+.order_eval_img {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.order_price_a {
+  /*margin-bottom: 30rpx;*/
+}
+
+/*.order_type{float: right;}*/
+
+.red_ball {
+  width: 14rpx;
+  height: 14rpx;
+  background: red;
+  border-radius: 14rpx;
+  position: absolute;
+  top: 12px;
+  right: 18rpx;
+  overflow: hidden;
+}
+
+/*-----------------以下页面修改样式------------------*/
+
+.order-hr {
+  clear: both;
+  width: 100%;
+  background: #f3f3f3;
+  height: 20rpx;
+}
+
+.order-ui {
+  font-family: "微软雅黑";
+  background: #fff;
+  border-top: 30rpx solid #f3f7fa;
+  margin-bottom: 110rpx;
+  overflow: hidden;
+  /* box-sizing: border-box;
+  padding-bottom: 100rpx; */
+}
+
+.order-li {
+  border-bottom: 30rpx solid #f3f7fa;
+   
+}
+
+.ordeer-title, .order-footer {
+  padding: 0 30rpx;
+  background: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 26rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title-l {
+  float: left;
+  color: #000;
+}
+
+.order-time {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.title-r {
+  float: right;
+  color: #18b4ed;
+}
+
+.order-main {
+  background: #f3f7fa;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.imgs {
+  margin-top: 16rpx;
+  height: 55rpx;
+  overflow: hidden;
+}
+
+.imgs>image {
+  width: 55rpx;
+  height: 55rpx;
+  margin-right: 10rpx;
+}
+
+.eval-bar {
+  height: 102rpx;
+  border-top: 1rpx solid #e5e5e5;
+}
+
+.eval-btn {
+  width: 180rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #18b4ed;
+  border-radius: 10rpx;
+  border: 1rpx solid #18b4ed;
+  font-size: 28rpx;
+  float: right;
+  box-sizing: border-box;
+  margin-top: 21rpx;
+  margin-right: 24rpx;
+}
+
+.star_number {
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+
+.star-on, .star-off {
+  width: 26rpx;
+  height: 26rpx;
+  background-image: url(https://www.qiaolibeilang.com/public/xcx/star1.png);
+  background-size: 100% 100%;
+  margin-right: 5rpx;
+}
+
+.star-off {
+  background-image: url(https://www.qiaolibeilang.com/public/xcx/star.png);
+}
+
+.numbers-numbers {
+  color: #18b4ed;
+  text-indent: 10rpx;
+}
+
+.arrow-right {
+  width: 16rpx;
+  height: 16rpx;
+  border-width: 1rpx 1rpx 0px 0px;
+  border-color: #666;
+  border-style: solid;
+  content: " ";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 15rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pages/leftSlide/leftSlide.wxss */
+
+.item-wrapper{
+    width: 100%; 
+    overflow: hidden;
+}
+
+.item-list{
+    position: relative;
+    width: 100%;
+    height: 138rpx;
+    margin-left: 20rpx;
+}
+
+.item-info, .item-oper{
+position:absolute;
+top:0rpx;
+right:-150rpx;
+
+width:150rpx;
+height:320rpx;
+box-sizing:border-box;
+}
+
+.item-info{
+    display: flex;
+    padding: 20rpx 20rpx 20rpx 0;
+    z-index: 2;
+    background: white;
+    transition: left 0.2s ease-in-out;
+}
+
+.item-list:first-child{
+    border-top: 1rpx solid #ccc;
+}
+
+.item-oper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.oper-delete{
+  display:flex;
+justify-content:center;
+align-items:center;
+width:150rpx;
+height:320rpx;
+z-index:1;
+color:white;
+background:red;
+font-size:52rpx;
+line-height:320rpx;
+text-align:center;
+}
+
+.info-img{
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.info-wrapper{
+    margin-left: 20rpx;
+    width: 588rpx;
+}
+
+.info-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rpx;
+}
+
+.info-desc .name{
+    font-size: 32rpx;
+    color: black;
+    font-weight: 600;
+}
+
+.info-desc .time{
+    font-size: 24rpx;
+    color: #999;
+}
+
+.info-content{
+    font-size: 28rpx;
+    color: #999;
+    margin-top: 4rpx;
+}

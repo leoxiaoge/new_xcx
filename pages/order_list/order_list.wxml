@@ -1,0 +1,50 @@
+<!--pages/order_list/order_list.wxml-->
+<view class="nav-warp">
+  <view class="tab">
+    <block wx:for="{{navItem}}" wx:key="index">
+      <view data-id="{{index+1}}" class="tab-txt {{showItem == index+1 ? 'active' : '' }} " style="position: relative;">
+        <text bindtap="navToggle" data-id="{{index}}">{{item}}</text>
+        <!--<view class="red_ball" wx:if="{{index == 0}}"></view>-->
+      </view>
+
+    </block>
+  </view>
+</view>
+
+<view class="order-ui">
+  <navigator class="order-li" url="/pages/order_info/order_infor?id={{i.id}}" open-type="navigateTo" wx:for="{{itemData}}" wx:for-index="idx" wx:for-item="i" data-index="{{idx}}" data-id="{{i.order_id}}">
+    <view class="ordeer-title">
+      <view class="title-l hhhh-left">
+        <text>订单编号：{{i.order_number}}</text>
+        <view class="arrow-right"></view>
+      </view>
+      <view class="title-r"> {{i.status_dec}} </view>
+    </view>
+    <view class="order-main hhhh-left">
+      <view class="">
+        <view class="order-time">{{i.ctime}}</view>
+        <view class="imgs hhhh-left">
+          <image wx:for="{{i.imgs}}" wx:for-item="img"  src="{{img}}"></image>
+        </view>
+        <!--评价已算好星级  -->
+        <!-- <view class="star_number hhhh-left" wx:if="{{i.is_eval == 1}}">
+          <text>已评价：</text>
+          <view class="star-on" wx:for="{{[1,2,3,4,5]}}" wx:for-item="ii" wx:if="{{ii <= i.stars}}"></view>
+          <view class="star-off" wx:for="{{[1,2,3,4,5]}}" wx:for-item="ii" wx:if="{{ii > i.stars}}"></view>
+          <view class="numbers-numbers">{{i.stars}}分</view>
+        </view> -->
+      </view>
+    </view>
+    <view class="order-footer">{{i.order_desc}}</view>
+    <!-- <view class="eval-bar" wx:if="{{i.is_eval == 0 && i.o_type ==1 && i.s != 11 }}">
+      <view class="eval-btn">评价得积分</view>
+    </view> -->
+  </navigator>
+</view>
+
+
+
+<view class="order_none"  wx:if="{{itemData.length <= 0 ? true:false}}">
+  <image src="https://www.qiaolibeilang.com/public/xcx/none.png" class="order_none_img"></image>
+  <text class="order_none_tex">哎呀,您还没有{{navItem[showItem-1]}}订单呢</text>
+</view>

@@ -1,0 +1,76 @@
+<!--pages/user/user.wxml-->
+<view class='top'>
+  <navigator url="{{user.phone == '' ? '/pages/password/password?types=0':''}}" open-type="navigateTo" class='top-left' hover-class='none'>
+    <image src='{{get_user.avatarUrl}}'></image>
+    <view>{{user.phone == '' ? '未绑定手机号':user.phone}}</view>
+    <view>{{get_user.nickName}}</view>
+  </navigator>
+</view>
+<!-- ball -->
+<view class='ball-warp'>
+  <view class='ball-top'>
+    <view class='ball-left'>
+      <image src='../../img/ball-top.svg'></image>
+      <view>账户余额</view>
+      <view class='ye-price'>￥{{user.remainder}}</view>
+    </view>
+    <!-- url="/pages/my_acc/my_acc" open-type="navigateTo" -->
+    <navigator url="/pages/my_acc/my_acc" open-type="navigateTo" class='ball-right' hover-class='none'>
+      <view>充值</view>
+      <!-- <image src='../../img/right-user.svg'></image> -->
+    </navigator>
+  </view>
+  <view class='ball-main'>
+    <view class='ball-3-warp'>
+      <navigator class='ball-3' url="/pages/{{i[1]}}/{{i[1]}}" open-type="navigateTo" wx:for="{{ball}}" wx:for-item="i" wx:for-index="ind" hover-class='none' bindtap="{{i[1]==''? 'opened':'' }}">
+        <view class='ball-main-top'>
+          <image src='../../img/ball-{{ind+1}}.svg'></image>
+          <text>{{i[0]}}</text>
+        </view>
+        <view class='ball-main-bom' wx:if="{{i[2]>0}}">{{i[2]}} {{i[3]}}</view>
+        <view class='ball-main-bom-none' wx:if="{{i[2]%1 != 0 || i[2] == 0}}">{{i[2]}} {{i[2] != 0 ? '':i[3]}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class='hr'></view>
+
+<!-- ball  -->
+<navigator url="/pages/order_list/order_list" open-type="navigateTo" class='order-bar' hover-class='hover'>
+  <view class='order-list'>
+    <image class='order-img' src='../../img/order.png'></image>
+    <text>我的订单</text>
+  </view>
+  <image src='../../img/right-bar.svg'></image>
+</navigator>
+<view class='hr'></view>
+<!--bar  -->
+<view class='bar-warp'>
+  <navigator class='bar-bar' url="/pages/{{i[1]}}/{{i[1]}}" open-type="navigateTo" hover-class="hover" wx:for="{{bar}}" wx:for-item="i" wx:for-index="ind">
+    <view class='bar-bar-con' bindtap="{{i[2] != '' ? 'opened':''}}">
+      <view class='bar-left'>
+        <image src='../../img/{{i[3]}}.svg'></image>
+        <text>{{i[0]}}</text>
+        <image wx:if="{{i[4] == 'new'}}" class='hot-img' src='../../img/new_hot.svg'></image>
+      </view>
+      <image class='bar-right' src='../../img/right-bar.svg'></image>
+    </view>
+  </navigator>
+</view>
+<!--tel  -->
+<view class='hr'></view>
+<view class='tel-warp'>
+  <navigator hover-class="hover" bindtap='callmeTap'>
+    <image src='../../img/tel.svg'></image>
+    <text>电话客服</text>
+  </navigator>
+  <button class='wechat' open-type="contact" session-from="weapp" hover-class='hover'>
+    <image src='../../img/wechat.svg'></image>
+    <text>在线客服</text>
+  </button>
+  <!-- <navigator url="/pages/wechat/wechat" open-type="navigateTo" hover-class="hover">
+    <image src='../../img/wechat.svg'></image>
+    <text>在线客服</text>
+  </navigator> -->
+</view>
+<view class='hr'></view>

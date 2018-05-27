@@ -1,0 +1,65 @@
+<!--pages/address/address.wxml-->
+<view class='adress-show' hidden='{{am}}'>
+  <view class='none_img-warp' wx:if="{{adderss_list.length<=0}}">
+    <image src='http://www.qiaolibeilang.com/public/new_xcx/none.png'></image>
+    <view>您还没添加地址</view>
+  </view>
+  <view class='address-list' wx:if="{{adderss_list.length>0}}">
+    <view class='address-bar' wx:for="{{adderss_list}}" wx:for-item="i">
+      <view class='address-left' bindtap='select_address' data-id="{{i.id}}" data-sclect='{{select}}'>
+        <view class='address-text'>{{i.address_info+i.address}}</view>
+        <view class='name-tel'>
+          <view class='address-name'>{{i.u_name}}</view>
+          <view class='address-tel'>{{i.u_phone}}</view>
+        </view>
+      </view>
+      <view class='address-right' bindtap='address_mod' data-id="{{i.id}}">
+        <image src='../../img/index-1.svg'></image>
+      </view>
+    </view>
+  </view>
+  <view class='add-address' hover-class='hover' bindtap='am'>
+    <image src='../../img/add.svg'></image>
+    <text>添加地址</text>
+  </view>
+</view>
+<!--添加地址修改地址  -->
+<view class='add-mod-warp' hidden='{{!am}}'>
+  <form bindsubmit="add_mod_address">
+    <view class="am-address-bar">
+      <view class='am-address-left'>地址</view>
+      <view class='am-address-right'>
+        <view class='big-address' bindtap='map'>
+          <input class='big-address-text' name="address_info" placeholder='请选择地址' disabled="true" value='{{address.address_info}}'></input>
+          <!-- <view class='big-address-text'></view> -->
+          <image src='../../img/map-address.svg'></image>
+        </view>
+        <view class='min-address'>
+          <input type='text' name="address" placeholder='请填写门牌号等详细地址' value='{{address.address}}'></input>
+        </view>
+      </view>
+    </view>
+    <view class='sex-tel'>
+      <view class='name-warp'>
+        <input class='name-nput' name="name" placeholder='请输入您的姓名' value='{{address.u_name}}'></input>
+      </view>
+      <radio-group class="sex-tel-radio" name="sex">
+        <label>
+          <text>女士</text>
+          <radio value="0" checked="" color='#1ca6f8' />
+        </label>
+        <label>
+          <text>男士</text>
+          <radio value="1" checked="" color='#1ca6f8' />
+        </label>
+      </radio-group>
+      <view class='tel-warp'>
+        <input type='number' name="phone" placeholder='请填写手机号码' maxlength='11' value='{{address.u_phone}}'></input>
+      </view>
+    </view>
+    <button formType="submit" class='save-btn'>{{address_id!=''?'修改':'添加'}}地址</button>
+  </form>
+  <view class='del-address' wx:if="{{address_id!=''}}">
+    <text bindtap='address_del'>删除该地址</text>
+  </view>
+</view>

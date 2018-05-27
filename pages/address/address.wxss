@@ -1,0 +1,206 @@
+/* pages/address/address.wxss */
+.adress-show ,.add-mod-warp{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #f3f7fa;
+  box-sizing: border-box;
+  padding-bottom: 100rpx;
+}
+.address-bar{
+  margin: 30rpx 30rpx 0 30rpx;
+  padding: 20rpx;
+  background: #fff;
+  border: 1rpx solid #e5e5e5;
+  /* border-image: url('http://www.qiaolibeilang.com/public/new_xcx/address-border.jpg') 8 8 8 8 round;
+  border-style: solid;  */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address-right{
+  /* border-left: 1rpx solid #bbb; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20rpx;
+  height: 100%;
+  margin-left: 20rpx;
+}
+.address-right image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.name-tel{
+  display: flex;
+  font-size: 28rpx;
+  color: #666;
+  padding-top: 16rpx;
+}
+.address-name{
+  margin-right: 30rpx;
+}
+.address-text{
+  font-size: 28rpx;
+  color: #333;
+  /* padding-top: 16rpx; */
+}
+.add-address{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #333;
+}
+.add-address image{
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 10rpx;
+}
+
+/*添加修改  */
+.am-address-bar{
+  margin-top: 30rpx;
+  background: #fff;
+  display: flex;
+  padding: 30rpx;
+  align-items: center;
+  /* border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff; */
+}
+.am-address-left{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80rpx;
+  font-size: 36rpx;
+  color: #666;
+  box-sizing: border-box;
+}
+.am-address-bar{
+  font-size: 26rpx;
+  color: #666;
+}
+.big-address{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.big-address-text{
+  width: 570rpx;
+  padding: 0 0 20rpx 10rpx;
+  min-height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.big-address image{
+  width: 40rpx;
+  height: 50rpx;
+  margin: 10rpx 0px 10rpx 20rpx;
+}
+.am-address-right{
+  width: 630rpx;
+}
+.min-address input{
+  padding-left: 10rpx;
+  margin-top: 20rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.name-warp{
+  /* margin-top: 30rpx;
+  padding: 30rpx; */
+  height: 94rpx;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #666;
+  font-size: 28rpx;
+  /* border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff; */
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.name-warp>input{
+  display: block;
+  width: 100%;
+  font-size: 26rpx;
+}
+.sex-tel{
+  background: #fff;
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  /* border-top: 1rpx solid #e4edff;
+  border-bottom: 1rpx solid #e4edff; */
+}
+.sex-tel-radio{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 26rpx;
+  color: #666;
+  height: 94rpx;
+  padding-left: 6rpx;
+}
+.sex-tel-radio label{
+  margin-right: 30rpx;
+}
+.sex-tel-radio radio{
+  margin-left: 10rpx;
+}
+radio .wx-radio-input{
+  width: 34rpx!important;
+  height: 34rpx!important;
+}
+.sex-tel-radio{
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.tel-warp{
+  height: 94rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tel-warp input{
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 6rpx;
+  font-size: 26rpx;
+  width: 690rpx;
+}
+.save-btn{
+  width: 690rpx;
+  height: 90rpx;
+  margin-top: 70rpx;
+  background: #1ca6f8;
+  color: #fff;
+  border:none;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.del-address{
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 26rpx;
+  bottom: 0px;
+  left: 0px;
+}

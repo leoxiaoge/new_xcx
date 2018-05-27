@@ -1,0 +1,40 @@
+<!--pages/my_acc/my_acc.wxml-->
+<view class='acc-warp'>
+  <form bindsubmit="recharge">
+    <view class='ye-bar'>
+      <view class='ye-title'>账户余额</view>
+      <view>￥{{balance}}</view>
+      <view class='invoice' bindtap='opened'>开发票</view>
+    </view>
+    <view class='price-number'>
+      <view class='price-title'>充值金额</view>
+      <view class='price'>
+        <view>￥</view>
+        <input type='number' name="price" value='{{price}}'></input>
+      </view>
+    </view>
+    <view class='recharge'>
+      <view class="rec-li {{ind === rec_number ? 'ava':''}}" bindtap='rec_number' data-index="{{ind}}" wx:for="{{recharge}}" wx:for-index="ind" wx:for-item="i">
+        <view class='cz-price'>￥{{i.cz}}</view>
+        <view class='zs-price'>送￥{{i.zs}}</view>
+      </view>
+    </view>
+    <view class='pay-type'>
+      <view class='pay-top'>支付方式</view>
+      <view class='wechat-pay'>
+        <image src='../../img/wechat-pay.svg'></image>
+        <view>微信支付</view>
+      </view>
+    </view>
+    <button class='cz-btn' formType="submit">立即充值</button>
+    <view class='user-agree'>
+      <checkbox-group bindchange="checkbox">
+        <label class='label'>
+          <checkbox class='acc-checkbox' value='true' ></checkbox>
+          <text>您已阅读并同意</text>
+        </label>
+      </checkbox-group>
+      <navigator url="/pages/agreement/agreement?type=1" open-type="navigateTo" class='book' hover-class='none'>《用户充值协议》</navigator>
+    </view>
+  </form>
+</view>

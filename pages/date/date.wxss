@@ -1,0 +1,105 @@
+/* pages/date/date.wxss */
+.data-warp{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  background: #f3f3f3;
+}
+.scroll-x{
+  height: 140rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.date-day-warp{
+  height: 100%; 
+  display: flex;
+  align-items: center; 
+  color: #333;
+}
+.date-day{
+  height: 90rpx;
+  box-sizing: border-box;
+  margin-left: 20rpx;
+  position: relative;
+  white-space:nowrap;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+}
+.arrow{
+  display: none;
+}
+.selecct-day .arrow{
+  display: block;
+  position: absolute;
+  width: 14rpx;
+  height: 14rpx;
+  border-width: 0px 1rpx 1rpx 0px;
+  border-style: solid;
+  border-color: #1ca6f8;
+  background: #fff;
+  bottom: -8rpx;
+  left: 50%;
+  transform:rotate(45deg);
+  margin-left: -7rpx;
+} 
+.selecct-day ,.selecct-day .date-day{
+  color: #1ca6f8;
+  border: 1rpx solid #1ca6f8;
+}
+/* 选择具体时间 */
+.data-swiper{
+  height: 820rpx;
+}
+.house-24{
+  margin: 20rpx;
+  background: #fff;
+  min-height: 300rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1rpx solid #e5e5e5;  
+  border-right: none;
+  border-bottom: none;
+}
+.house-24 > view{
+  width: 25%;
+  height: 130rpx;
+  font-size: 26rpx;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  box-sizing: border-box;
+}
+.house-24 > .selecct-house{
+  background: #1ca6f8;
+  color: #fff;
+}
+.house-24 > .off-house{
+  background: #f3f3f3;
+  color: #999;
+}
+.ok-btn{
+  background: #1ca6f8;
+  color: #fff;
+  height: 90rpx;
+  margin: 50rpx 20rpx 30rpx 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+}
+.off-btn{
+  background: #999;
+}

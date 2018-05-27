@@ -1,0 +1,63 @@
+<!--card  -->
+<view class='sk_card-warp'>
+  <view class='card_bg' wx:if="{{card.cards.length < 1}}" style="background-image: url('http://www.qiaolibeilang.com/public/new_xcx/card-1.jpg');margin-top:30rpx;">
+    <view class='card-name'></view>
+    <!-- <view class='card-time'>有效期：一个月</view> -->
+    <view class='card-tip'>
+      <view>
+        <view class='price'></view>
+        <!-- <view class='number'>可洗
+          <text>10 </text>次</view> -->
+      </view>
+    </view>
+  </view>
+  <!-- <view class='set-pass-warp'>
+  <navigator class='set-pay' wx:if="{{card.cards.length >= 1}}" url="/pages/password/password?types=1" open-type="navigateTo" hover-class='none'>{{card.is_setpaypw == 1 ? '修改支付密码':'设置支付密码'}}</navigator>
+</view> -->
+  <swiper class='card-swiper' wx:if="{{card.cards.length >= 1}}" indicator-dots="true" indicator-color="rgba(255,255,255,0.3)" indicator-active-color="#ffffff">
+    <swiper-item wx:for="{{card.cards}}" wx:for-item="i">
+      <view class='card_bg' style="background-image: url('http://www.qiaolibeilang.com/public/new_xcx/card-1.jpg')">
+        <view class='card-name'></view>
+        <view class='card-time'>有效期：{{i.end_date}}</view>
+        <view class='card-tip'>
+          <view>
+            <view class='price'></view>
+            <view class='number'>剩余
+              <text>{{i.overplus_times}} </text>次</view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class='set-pass-warp'>
+    <navigator class='set-pay' url="/pages/password/password?types=1" open-type="navigateTo" hover-class='none'>{{card.is_setpaypw == 1 ? '修改宿卡支付密码':'设置宿卡支付密码'}}</navigator>
+  </view>
+  <view class='btn-warp'>
+    <view class='care-btn' bindtap='purchase'>{{card.cards.length>0 ? '再买一张':'购买'}}</view>
+  </view>
+  <!--main  -->
+  <image class='sk-main' src='http://www.qiaolibeilang.com/public/new_xcx/sk-main.jpg'></image>
+  <!-- 文案 -->
+  <!--<view class='text-ul'>
+    <view wx:for="{{text_ul}}">{{item}}</view>
+  </view>-->
+  <!--使用说明  -->
+  <!--<view class='inst-warp'>
+    <view class='inst-main'>
+      <view class='inst-title'>使用说明</view>
+      <view class='inst-text' wx:for="{{inst}}">{{item}}</view>
+    </view>
+  </view>-->
+  <!--record  -->
+  <view class='record'>
+    <view class='record-top'>
+      <view class='record-title'>使用记录</view>
+      <view class='record-hr'></view>
+    </view>
+    <view class='record-li' wx:for="{{card.sx_card}}">
+      <text>{{item}}</text>
+      <view>1次</view>
+    </view>
+    <view class='rec-none' wx:if="{{card.sx_card == undefined}}">暂无使用记录</view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<!--help.wxml-->
+<view class="title ">常见问题</view>
+<view class="help-bar">
+  <view class="bar-title ">Q1:衣物如何清洗？</view>
+  <view class="bar-text">宿洗为广大用户制定了一套专业的洗护流程，分拣一分 类一去溃一清洗一洪干一消毒一整洁一质检一包装一 分拣一配送，宿洗为您提供专业、便捷、高品质的洗护 服务。</view>
+</view>
+
+<view class="help-bar">
+  <view class="bar-title">Q2 :衣物送到哪里清洗？</view>
+  <view class="bar-text">宿洗和多家优秀洗衣店、洗衣工厂合作，您的衣服会送 到就近的一家。在选择加工商时，除了基本的资质、店 面面积、环境要求外，宿洗对加工商使用的设备、员工 的技能水平、工作年限、清洗流程等都有严格的要求， 保证了宿洗用户每件衣物的洗护品质。</view>
+</view>
+<view class="help-bar">
+  <view class="bar-title ">Q3 :多久能洗好？</view>
+  <view class="bar-text">取走衣服后，普通衣物需5小时左右，特殊衣物耗时稍久， 根据衣物布料、衣物状态的不同而有所不同，具体时间可 在工作人员收到衣物查看后做出判断，宿洗会在保证洗 护质量的前提下以最快的速度为您服务。</view>
+</view>
+<view class="help-bar">
+  <view class="bar-title ">Q4 :有哪些衣物不能洗？</view>
+  <view class="bar-text">1、 医疗使用衣物；
+    <view class="both"></view>
+    2、 大面积血溃衣物（根据公安部门对洗衣行业的相关规 定，不能收大面积血溃的衣物）；
+    <view class="both"></view>
+    3、 不具备穿着价值的衣物（例如古装等纪念意义的衣 物）；
+    <view class="both"></view>
+    4、 宠物的衣物（为了对客户的健康负责，暂时不收取宠 物的衣物)。
+  </view>
+</view>
+<view class="help-bar">
+  <view class="bar-title ">Q5 :洗的不满意怎么办？</view>
+  <view class="bar-text">建议您在收到衣物的48小时内检查衣物，若发现问题， 请及时联系宿洗客服。</view>
+</view>
+<view class="help-bar">
+  <view class="bar-title">Q6 :衣服洗坏了怎么处理？</view>
+  <view class="bar-text">若您的衣物是在清洗过程中造成的损坏，宿洗会尽快核 实后，根据宿洗理赔细则标准对您进行赔付，单笔订单 最高赔付额度¥2000元。</view>
+</view>
+<view class="help-bar">
+  <view class="bar-title ">Q7 :是干洗还是水洗？</view>
+  <view class="bar-text">收到衣服后分拣时，工作人员会根据衣服面料、洗澡标 识等进行洗涤前分类，从而采取不同的洗涤方式。</view>
+</view>
+<view class="help-bar">
+  <view class="bar-title">Q8 :订单如何支付？</view>
+  <view class="bar-text">微信支付，宿洗使用的是微信小程序平台，目前只能以 微信支付。</view>
+</view>

@@ -1,0 +1,24 @@
+/* agreement.wxss */
+.agr-warp{
+  margin: 30rpx;
+  font-family: "微软雅黑";
+}
+.title{
+  text-align: center;
+  color: #000000;
+  font-size: 50rpx;
+}
+.text-title{
+  color: #000;
+  font-size: 30rpx;
+  line-height: 60rpx;
+} 
+.text-text{
+  color: #666;
+  font-size: 30rpx;
+  line-height: 46rpx;
+  text-align: justify;
+}
+.min-text-text{
+  margin-left: 16rpx;
+}

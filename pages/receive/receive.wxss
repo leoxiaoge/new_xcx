@@ -1,0 +1,109 @@
+/* pages/receive/receive.wxss */
+.receive-warp{
+  background: #eee9db;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+}
+.rec-top{
+  height: 480rpx;
+  background-image: url('https://www.qiaolibeilang.com/public/new_xcx/rec-top.jpg');
+  background-size: 100% 100%;
+  position: relative;
+}
+.rec-top-text{
+  position: absolute;
+  width: 280rpx;
+  height: 180rpx;
+  top: 130rpx;
+  left: 50%;
+  margin-left: -140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 1.5;
+  overflow: hidden;
+  font-weight: 500;
+}
+.ninck-name{
+  width: 250rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.card{
+  background: #e5d4a8;
+  margin: 30rpx;
+  padding: 30rpx;
+  border-radius: 16rpx;
+}
+.card-img{
+  width: 630rpx;
+  height: 406rpx;
+  display: block;
+  border-radius: 34rpx;
+  overflow: hidden;
+
+}
+.card-img-warp{
+  position: relative;
+  color: #f9f9f9;
+  font-size: 32rpx;
+}
+.card-name{
+  position: absolute;
+  height: 40rpx;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  margin-top: -20rpx;
+  left: 40rpx;
+}
+.card-price{
+  font-size: 36rpx;
+  position: absolute;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  margin-top: -20rpx;
+  right: 100rpx;
+  color: #e4007b;
+}
+.card-btn-warp{
+  text-align: center;
+  padding: 30rpx 0 0 0;
+}
+.rec-btn{
+  background: #1ca6f8;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 26rpx 40rpx;
+  font-size: 32rpx;
+  border-radius: 16rpx;
+}
+.rej-btn{
+  color: #1ca6f8;
+  font-size: 28rpx;
+  line-height: 1;
+  padding: 30rpx 0 0 0;
+}
+.text-warp{
+  padding: 30rpx 40rpx;
+  color: #1ca6f8;
+  font-size: 26rpx;
+  line-height: 1.8;
+}
+.text-title{
+  text-align: center;
+  padding-bottom: 14rpx;
+  font-size: 28rpx;
+}

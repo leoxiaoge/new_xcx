@@ -1,0 +1,30 @@
+<!--pages/md/md.wxml-->
+<template name="md">
+  <view class='md-warp' wx:for="{{work}}" wx:for-item="i" wx:if="{{(i.gx ==1 && menu_top_num != 2) || (i.gx ==2 && menu_top_num == 2)  ? true:false}}">
+    <!-- <view class='md-img-warp'>
+      <image src='http://www.qiaolibeilang.com/public/new_xcx/md-gx-3.jpg'></image>
+    </view> -->
+    <view class='md-top'>
+      <view class='md-left'>
+        <view></view>
+        <image src='../../img/md-attr.svg'></image>
+      </view>
+      <view class='md-title'>{{i.title}}</view>
+      <view class='md-right'>
+        <image src='../../img/md-attr.svg'></image>
+        <view></view>
+      </view>
+    </view>
+    <view class='md-ul'>
+      <view class='md-li' wx:for="{{i.text}}" wx:for-item="s">
+        <view class='md-text'>
+          <view class='md-btn'>{{s.title}}</view>
+          <view class='md-ms'>{{s.text}}</view>
+        </view>
+        <view class='md-down'>
+          <image src='../../img/md-attr.svg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

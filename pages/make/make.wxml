@@ -1,0 +1,61 @@
+<!--pages/make/make.wxml-->
+<form bindsubmit="sub_order">
+  <view class='make-warp'>
+    <view class='hr'></view>
+    <view class='rearch-tip history-tip'>
+      <view class='tip-title'>
+        <text>请选择您需要的服务</text>
+      </view>
+      <view class='tip-main'>
+        <view bindtap='serever' class="tip-text {{i.ava == 1 ? 'ava':''}}" wx:for-index="idx" data-id="{{i.id}}" data-index="{{idx}}" wx:for="{{serever}}" wx:for-item="i">{{i.title}}</view>
+      </view>
+    </view>
+    <view class='hr'></view>
+    <view class='address-time'>
+      <navigator class='address-warp' url="/pages/address/address?types=1" open-type="navigateTo">
+        <view class='address-left' wx:if="{{address ==''}}">
+          <view class='xzdz'>选择地址</view>
+        </view>
+        <view class='address-left' wx:if="{{address !=''}}">
+          <view class='name-tel'>
+            <view class='name'>{{address.u_name}}</view>
+            <view class='tel'>{{address.u_phone}}</view>
+          </view>
+          <view class='address-text'>{{address.address_info+address.address}}</view>
+        </view>
+        <image class='address-right' src='../../img/right-bar.svg'></image>
+      </navigator>
+      <!-- <view class='times-warp'>
+      <navigator class='time-left' hover-class='none'url="/pages/date/date" open-type="navigateTo">
+        <view class='time-top'>预约取件时间</view>
+        <view class='time-main'>10月26日15:00-16:00</view>
+      </navigator>
+      <navigator class='time-right' hover-class='none' url="/pages/date/date" open-type="navigateTo">
+        <view class='time-top'>预约收件时间</view>
+        <view class='time-main'>10月26日15:00-16:00</view>
+      </navigator>
+    </view> 
+    <view class='hr'></view> -->
+      <navigator class='screct-time' url="/pages/date/date" open-type="navigateTo">
+        <text wx:if="{{time ==''}}">选择取件时间</text>
+        <text wx:if="{{time !=''}}">取件时间：{{time}}</text>
+        <image class='del' src='../../img/right-bar.svg'></image>
+      </navigator>
+    </view>
+    <view class='hr'></view>
+    <textarea class='remarks' name="remarks" placeholder='如有问题请备注留言'></textarea>
+    <view class='hr'></view>
+    <!--  -->
+    <!-- <view class='rearch-tip history-tip'>
+      <navigator class='tip-title' url="/pages/date/date" open-type="navigateTo">
+        <text wx:if="{{time ==''}}">选择取件时间</text>
+        <text wx:if="{{time !=''}}">取件时间：{{time}}</text>
+        <image class='del' src='../../img/right-bar.svg'></image>
+      </navigator>
+      <view class='tip-main'>
+        <textarea class='message' name="remarks" placeholder='如有问题请备注留言'></textarea>
+      </view>
+    </view> -->
+    <button class='sub-btn' form-type="submit" loading='{{sub}}'>立即预约</button>
+  </view>
+</form>

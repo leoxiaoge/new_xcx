@@ -1,0 +1,8 @@
+<!--pages/price_list/price_list.wxml-->
+<view class='table' wx:for="{{price}}"  wx:for-item="i" wx:for-index="idx">
+  <view class='tr' wx:for="{{i}}" wx:for-item="s" wx:for-index="ind">
+    <view class='td'>{{s[0]}}</view>
+    <view class='td'>{{s[1]}}</view>
+    <view class='td'>{{s[2]}}</view>
+  </view>
+</view>

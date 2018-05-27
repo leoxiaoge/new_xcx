@@ -1,0 +1,22 @@
+/* pages/service/service.wxss */
+.service-top{
+  display: block;
+  width: 690rpx;
+  height: 433rpx;
+  margin: 0 auto;
+  padding: 50rpx 0 30rpx 0;
+}
+.service-img{
+  display: block;
+  width: 250rpx;
+  height: 250rpx;
+  margin:  0 auto;
+
+}
+.text{
+  font-size: 28rpx;
+  color: #666;
+  text-align: justify;
+  margin: 30rpx;
+  text-indent: 60rpx;
+}

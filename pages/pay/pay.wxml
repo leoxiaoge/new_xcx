@@ -1,0 +1,48 @@
+<!--pages/pay/pay.wxml-->
+<!-- <button bindtap='pay'>去支付</button>  -->
+<view class='pay-warp'>
+  <form bindsubmit="pay">
+    <view class='pay-price'>
+      <view class='price-title'>支付金额</view>
+      <view class='price-number'>￥{{infor.price}}</view>
+    </view>
+    <view class='pay-type'>
+      <view class='pay-top'>支付方式</view>
+      <view class='pay-main'>
+        <radio-group name="type">
+          <label class='label-li'>
+            <view class='label-left'>
+              <image src='../../img/wechat-pay.svg'></image>
+              <view>微信支付</view>
+            </view>
+            <radio value='wecaht' checked="true"></radio>
+          </label>
+          <label class='label-li'>
+            <view class='label-left'>
+              <image src='../../img/card-pay.svg'></image>
+              <view>宿卡支付</view>
+            </view>
+            <radio value='card'></radio>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <button form-type='submit' class='pay-btn' loading='{{pay==1}}'>去支付</button>
+  </form>
+</view>
+
+<!--宿卡支付密码  -->
+<view class='mark_sk' wx:if="{{sk_pay == 1}}">
+  <form bindsubmit="pass_sk_pay">
+    <view class='sk-main'>
+      <view class='colse' bindtap='colse_sk_pay'>X</view>
+      <label class='pass-label'>
+        <input type='password' placeholder='请输入宿卡支付密码' maxlength='6' name="pass" ></input>
+        <button form-type='submit' class='sun_btn' loading='{{pass_sk_pay ==1}}'>确定</button>
+      </label>
+      <view class='back-pass'>
+        <navigator  url="/pages/password/password?types=1" open-type="navigateTo" hover-class='none'>忘记密码</navigator>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/receive/receive.wxml-->
+<view class='receive-warp'>
+  <view class='rec-top'>
+    <view class='rec-top-text'>
+      <view>
+        <view class='ninck-name'>DengDengDengDengDengDengDengDeng</view>
+        <view>送给您的礼物</view>
+      </view>
+    </view>
+  </view>
+  <view class='card'>
+    <view class='card-img-warp'>
+      <image class='card-img' src='http://www.qiaolibeilang.com/public/new_xcx/card-2.jpg'></image>
+      <view class='card-name'>心意卡</view>
+      <view class='card-price'>￥298</view>
+    </view>
+    <view class='card-btn-warp'>
+      <view class='rec-btn'>接收礼物</view>
+      <view class='rej-btn'>
+        <text>拒收礼物</text>
+      </view>
+    </view>
+  </view>
+  <view class='text-warp'>
+    <view class='text-title'>{{text.title}}</view>
+    <view class='text-text' wx:for="{{text.text}}">{{item}}</view>
+  </view>
+</view>

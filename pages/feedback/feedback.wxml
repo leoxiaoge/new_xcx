@@ -1,0 +1,7 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='feedback'>
+  <form bindsubmit='sub_feedback'>
+    <textarea class='feed-textarea' placeholder='填写您宝贵的建议' name="feedback"></textarea>
+    <button class='sub-btn' form-type="submit" loading='{{sub==1}}'>提交</button>
+  </form>
+</view>

@@ -1,0 +1,5 @@
+<!--share.wxml-->
+<view class='share-warp'>
+<image class='share-title' src='http://www.qiaolibeilang.com/public/new_xcx/share-title.png'></image>
+<button class='share-btn' open-type="share">分享给好友</button>
+</view>

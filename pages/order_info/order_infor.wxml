@@ -1,0 +1,74 @@
+<!--pages/order_info/order_infor.wxml-->
+<view class='order-info-warp'>
+  <!-- <view class='progress-bar'>
+  <view>
+    <image></image>
+  </view>
+</view> -->
+  <view class='order-infor'>
+    <view class='order-top'>
+      <text class='order-title'>订单信息</text>
+      <text class='del-order' data-url="appointment_cancel" bindtap='del_order' wx:if="{{infor.status==10}}">取消预约</text>
+      <text class='del-order' data-url="order_delete" bindtap='del_order' wx:if="{{infor.status==-20}}">删除订单</text>
+    </view>
+    <view class='order-main'>
+      <view class='order-bar' wx:for="{{order_info}}" wx:for-item='i'>
+        <view class='order-left'>{{i.title}}：</view>
+        <view class='order-right'>{{i.text}}</view>
+      </view>
+    </view>
+    <view class='border-ul'  wx:if="{{infor.status == 10 || infor.status == 20 || infor.status == -20 ? false:true}}">
+      <view class='border-li' wx:for="{{infor.goods}}" wx:for-item="i">
+        <view class='li-left'>
+          <image src='{{i.picture}}'></image>
+          <view class='bk-name'>{{i.name}}</view>
+        </view>
+        <view class='li-number'>x{{i.num}}</view>
+        <view class='li-right'>￥{{i.price}}</view>
+      </view>
+      <view class='lr-bar'>
+        <view class='lr-lrft'>配送费</view>
+        <view class='lr-right'>￥{{infor.distribution_price}}</view>
+      </view>
+      <navigator class='lr-bar' url="/pages/coupon/coupon?price={{infor.order_price}}" open-type="navigateTo" hover-class='hover'>
+        <view class='lr-lrft'>优惠券</view>
+        <view class='lr-right'>-￥{{infor.coupon_price}}</view>
+      </navigator >
+      <view class='border-li border-b' wx:if="{{infor.first_free != undefined}}">
+        <view class='li-left'>
+          <image src='{{infor.first_free.picture}}'></image>
+          <view class='bk-name'>{{infor.first_free.name}}[首件免单]</view>
+        </view>
+        <view class='li-number'>x1</view>
+        <view class='li-right red_color'>-￥{{infor.first_free.price}}</view>
+      </view>
+      <view class='hj-price'>
+        <text>合计金额：</text>
+        <text class='big_price'>￥{{infor.order_price}}</text>
+      </view>
+      <view class='play'>
+        <button class='go-play' bindtap='go_play' loading='{{pay==1}}' wx:if="{{infor.status == 30}}">去支付</button>
+      </view>
+    </view>
+    <!-- <view class='hj-price'>
+      <text>合计金额：</text>
+      <text class='big_price'>￥{{infor.goods_prices}}</text>
+    </view>
+    <view class='play'>
+      <navigator class='go-play'>去支付</navigator>
+    </view> -->
+  </view>
+  <!--物流状态  -->
+  <view class='express' wx:if="{{infor.step.length>0}}">
+    <view class='order-top'>订单状态</view>
+    <view class='exp-ul'>
+      <view class='exp-li' wx:for="{{infor.step}}" wx:for-item="i">
+        <view class='ball'></view>
+        <view class='exp-li-main'>
+          <view class='exp-text'>{{i.remark}}</view>
+          <view class='exp-time'>{{i.create_time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

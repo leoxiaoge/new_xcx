@@ -1,0 +1,2 @@
+<!--pages/public/public.wxml-->
+<image class='pubilc-img' lazy-load="true" mode='scaleToFill' src='http://www.qiaolibeilang.com/public/new_xcx/public.jpg'></image>

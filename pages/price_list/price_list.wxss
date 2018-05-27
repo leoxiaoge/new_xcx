@@ -1,0 +1,29 @@
+/* pages/price_list/price_list.wxss */
+.table{
+  display: table;
+  margin: 30rpx;
+  border-top:1px solid #e5e5e5; 
+  border-left: 1px solid #e5e5e5;
+  width: 690rpx;
+  font-size: 26rpx;
+}
+.tr{
+  display: table-row;
+  height: 50rpx;
+  color: #333;
+}
+.td{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.td:nth-child(1){
+  width: 350rpx;
+}
+.tr:nth-child(1){
+  background: #1ca6f8;
+  color: #fff;
+  height: 60rpx;
+}

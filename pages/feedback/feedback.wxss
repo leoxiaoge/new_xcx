@@ -1,0 +1,31 @@
+/* pages/feedback/feedback.wxss */
+.feedback{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  background: #f3f3f3;
+}
+.feed-textarea{
+  display: block;
+  height: 300rpx;
+  box-sizing: border-box;
+  width: 710rpx;
+  margin: 20rpx;
+  border: 1rpx solid #e5e5e5;
+  background: #f8f8f8;
+  font-size: 30rpx;
+  padding: 10rpx;
+  color: #666;
+}
+.sub-btn{
+  height: 80rpx;
+  margin:  50rpx 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1ca6f8;
+  color: #fff;
+  font-size: 34rpx;
+}

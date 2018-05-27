@@ -1,0 +1,31 @@
+/* share.wxss */
+.share-warp{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url('http://www.qiaolibeilang.com/public/new_xcx/share_bg.png');
+  background-size: 100% 100%;
+}
+.share-title{
+  display: block;
+  width:750rpx;
+  height: 442rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.share-btn{
+  background: #1ca6f8;
+  color: #fff;
+  width: 500rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 36rpx;
+}
+.share-btn::after{
+  border: none;
+}

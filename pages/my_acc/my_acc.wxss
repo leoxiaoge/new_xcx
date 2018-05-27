@@ -1,0 +1,131 @@
+/* pages/my_acc/my_acc.wxss */
+.acc-warp{
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: #f3f7fa;
+}
+.ye-bar{
+  background: #fff;
+  padding: 30rpx;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #22ac38;
+  font-size: 38rpx;
+}
+.ye-title{
+  font-size: 26rpx;
+  color: #333;
+}
+.invoice{
+  font-size: 26rpx;
+  color: #1ca6f8;
+}
+.price-number{
+  background: #fff;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  padding: 60rpx 30rpx;
+  position: relative;
+}
+.price-title{
+  position: absolute;
+  font-size: 32rpx;
+  line-height: 1;
+  color: #000;
+  top: 30rpx;
+  left: 30rpx;
+}
+.price{
+  display: flex;
+  font-size: 38rpx;
+  color: #000;
+
+}
+.price input{
+  border-bottom: 1rpx solid #999999;
+  width: 200rpx;
+  padding-left: 14rpx;
+  color: #22ac38;
+}
+.recharge{
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+}
+.rec-li{
+  background: #fff;
+  width: 210rpx;
+  padding: 20rpx 0;
+  text-align: center;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+.cz-price{
+  font-size: 32rpx;
+  color: #000;
+}
+.zs-price{
+  font-size: 26rpx;
+  color: #22ac38;
+}
+.ava{
+  border:3rpx solid #22ac38;
+  box-sizing: border-box;
+}
+.pay-type{
+  padding: 30rpx;
+  background: #fff;
+}
+.pay-top{
+  border-bottom: 1rpx solid #e5e5e5;
+  font-size: 32rpx;
+  text-align: center;
+  padding-bottom: 14rpx;
+}
+.wechat-pay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #333;
+  padding-top: 20rpx;
+}
+.wechat-pay image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.cz-btn{
+  margin: 50rpx 30rpx 30rpx 20rpx;
+  background: #22ac38;
+  color: #fff;
+  border-color: #22ac38;
+}
+.user-agree{
+  display: flex;
+  font-size: 26rpx;
+  align-items: center;
+  justify-content: center;
+}
+.label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+.book{
+  color: #1ca6f8;
+}
+checkbox .wx-checkbox-input {
+  width: 28rpx;
+  height: 28rpx;
+}
+.acc-checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

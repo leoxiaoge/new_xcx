@@ -1,0 +1,27 @@
+<!--pages/eval/eval.wxml-->
+<view class='eval-warp'>
+  <view class='eval-both'></view>
+  <scroll-view class='eval-ul' style="height: {{winheight-10}}px;" scroll-y="true" scroll-x="false" bindscrolltolower="de" >
+  <!--bindscrolltolower="de"  -->
+    <view class='eval-li' wx:for="{{comment_list}}"    wx:for-item="i" >
+      <view class='li-top'>
+        <!-- <text class='address-user'>深圳用户</text> -->
+        <text class='tel'>{{i.phone}}</text>
+      </view>
+      <view class='li-con'>
+        <!-- <view class='li-left'>“</view> -->
+        <view class='li-conn'>{{i.comment}}</view>
+        <!-- <view class='li-right'>”</view> -->
+      </view>
+      <view class='li-bom'>
+        <!-- <text class='type'>洗衣服务</text> -->
+        <text class='time'>{{i.time}}</text>
+      </view>
+    </view>
+    <view class='footer-loding' wx:if="{{dbou == 1}}">
+      <image src='../../img/looding.svg'></image>
+      <text class='loding-text'>加载中</text>
+    </view>
+    <view class='no-tetx' wx:if="{{none == 1}}">没有内容了</view>
+  </scroll-view>
+</view> 

@@ -1,0 +1,37 @@
+/* about.wxss */
+/*.about-banner{
+  width: 100%;
+  height: 160rpx;
+  background:url(https://www.qiaolibeilang.com/public/xcx/about_banner.png);
+  background-size: 100% 155rpx;
+}*/
+.banner{
+  display: block;
+  width: 100%;
+  height: 155rpx;
+} 
+.about-text{
+  clear: both;
+  padding: 30rpx;
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+  line-height: 43rpx;
+  background: #f3f7fa;
+  color: #333;
+  text-align:justify;
+  /*text-indent: 60rpx;*/
+}
+.br{
+  clear: both;
+  height: 17rpx;
+}
+.about-main{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 375rpx;
+  margin: 20rpx 0 20rpx 0;
+}
+.p{
+text-indent: 58rpx;
+}

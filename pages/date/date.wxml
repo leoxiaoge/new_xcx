@@ -1,0 +1,26 @@
+<!--pages/date/date.wxml-->
+<view class='data-warp'>
+  <!--头部滚动  -->
+  <scroll-view class='scroll-x' scroll-x="true" style="width: 100%;" scroll-left="{{left}}" >
+    <view class='date-day-warp'>
+      <view class="date-day {{swiper_index == ind ? 'selecct-day':''}}" wx:for="{{day}}" wx:for-index="ind" wx:for-item='i' data-index='{{ind}}' data-select_day='{{i}}' bindtap='select_day'>
+        <view class='day-text'>
+          <view>{{week[ind]}}</view>
+          <view>{{i}}</view>
+        </view>
+        <view class='arrow'></view>
+      </view>
+    </view>
+  </scroll-view>
+  <!--main滚动  -->
+  <swiper class='data-swiper' bindchange='change_day' current='{{swiper_index}}'>
+    <block wx:for="{{day}}" wx:for-item='i' wx:for-index="ind_day"   >
+      <swiper-item>
+        <view class='house-24'>
+          <view bindtap='select_house' wx:if="{{ind_day == 0 && house > ind-1 ? false:true}}" class="{{ind_day == 0 && house > ind-1 ? 'off-house':''}} {{ind_day==ava_day && ind==ava_house ? 'selecct-house':''}}" data-up_index='{{ind_day}}' wx:for="{{24}}" wx:for-index="ind" data-index="{{ind}}" data-time="{{year[ind_day]}}{{i}}{{ind < 10 ? '0'+ind:ind}}:00-{{ind+1 < 10 ? '0'+(ind+1):ind+1}}:00">{{ind < 9 ? '0'+ind:ind}}:00-{{ind+1 < 9 ? '0'+(ind+1):ind+1}}:00</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <button bindtap='back_time' loading='{{back_time}}' class="ok-btn {{time == undefined ? 'off-btn':''}}">确定选择</button>
+</view>

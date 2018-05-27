@@ -1,0 +1,10 @@
+<!--pages/service/service.wxml-->
+<view class='service-warp'>
+  <image class='service-top' src='http://www.qiaolibeilang.com/public/new_xcx/service.jpg'></image>
+  <image class='service-img' src='http://www.qiaolibeilang.com/public/new_xcx/service1.png'></image>
+  <view class='text'>宿洗作为新兴的家庭洗护垂直平台，致力为用户提供专业、便捷、高品质的洗护服务。采用国际先进的洗护设备，拥有强大的洗护技术团队，每位技术人员均有多年专业洗护经验，并严格执行各项洗护流程，为用户衣物提供高品质的洗护服务奠定良好的基础。</view>
+  <image class='service-img' src='http://www.qiaolibeilang.com/public/new_xcx/service2.png'></image>
+  <view class='text'>宿洗洗护中心坚持以严格的环保标准要求自身，所有洗涤设备均采用对人体无毒无害的洗涤剂和碳氢干洗溶剂。宿洗洗护中心通过分拣、预处理、洗护、烘干、整烫、包装等主要程序对衣物进行专业洗护。在每一个步骤之后都会对衣服进行逐件细致的检查，以确保衣物的安全、洁净。</view>
+  <image class='service-img' src='http://www.qiaolibeilang.com/public/new_xcx/service3.png'></image>
+  <view class='text'>宿洗在每个社区里招募社区业主作为宿洗物流小哥，负责方圆2公里内的衣物取送。当用户通过公众号或者微信小程序下单后，身穿宿洗制服的宿洗小哥便会在指定的时刻，上门取走需要清洗的衣物，并于约定时间内负责将洗好的衣物以挂件等形式送回。</view>
+</view>

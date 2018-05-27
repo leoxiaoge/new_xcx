@@ -1,0 +1,50 @@
+<!--pages/search/search.wxml-->
+<view class='bg-view'>
+  <view class='rearch-bar'>
+    <navigator open-type="navigateBack" hover-class="none">
+      <image class='back' src='../../img/back.svg'></image>
+    </navigator>
+    <view class='rearch-right'>
+      <view class='input-warp'>
+        <image class='rearch' src='../../img/search.svg'></image>
+        <input type='text' placeholder='羽绒服清洗' focus="true" bindinput="rearch"></input>
+      </view>
+      <text class='rearch-text'>搜索</text>
+    </view>
+  </view>
+
+  <view class='rearch-tip' wx:if="{{rearch == ''}}">
+    <view class='tip-title'>热门搜索</view>
+    <view class='tip-main'>
+      <view class='tip-text' wx:for="{{hot}}" wx:for-item="i">{{i}}</view>
+    </view>
+  </view>
+
+  <view class='rearch-tip history-tip' wx:if="{{rearch == ''}}">
+    <view class='tip-title'>
+      <text>历史搜索</text>
+      <image class='del' src='../../img/del.svg'></image>
+    </view>
+    <view class='tip-main'>
+      <view class='tip-text' wx:for="{{history}}" wx:for-item="i">{{i}}</view>
+    </view>
+  </view>
+
+  <view class='bk-ul'>
+    <view class='bk-li'>
+      <view class='bk-left'>
+        <image></image>
+        <view class='bk-left-text'>
+          <view class='bk-name'>鳄鱼皮皮鞋</view>
+          <view class='bk-price'>￥250</view>
+        </view>
+      </view>
+      <view class='bk-right'>
+      <image src='../../img/-.svg'></image>
+      <view>1</view>
+      <image src='../../img/+.svg'></image>
+      </view>
+    </view>
+  </view>
+
+</view>

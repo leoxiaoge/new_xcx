@@ -1,0 +1,172 @@
+<!--pages/product/product.wxml-->
+<!-- <scroll-view style='height:{{winheight}}px' scroll-y bindscroll="scroll"> -->
+<!--top  -->
+<!-- <view class='top'>
+    <view class='rearch-bar'>
+      <navigator url="/pages/index/index" open-type="reLaunch" hover-class="none">
+        <image class='back' src='../../img/back.svg'></image>
+      </navigator>
+      <view class='rearch-right'>
+        <view class='input-warp'>
+          <image class='rearch' src='../../img/search.svg'></image>
+          <input type='text' placeholder='羽绒服清洗'></input>
+        </view>
+        <text class='rearch-text'>搜索</text>
+      </view>
+    </view>
+    <view class='name'>
+      <image class='name-left' src=''></image>
+      <view class='name-right'>
+        <view class='name-title'>宿洗</view>
+        <view class='name-text'>欢饮光临“宿洗”洗衣服务，预约取件更方便</view>
+      </view>
+    </view>
+    <view class='ad'>
+      <view class='ad-left'>
+        <view class='ad-bar'>
+          <image src='../../img/new.svg'></image>
+          <view>新用户下单首件免费洗</view>
+        </view>
+      </view>
+      <view class='ad-right'>
+        <text>三个优惠活动</text>
+        <image src='../../img/right.svg'></image>
+      </view>
+    </view>
+  </view> -->
+<!--main  -->
+<!-- <view class='main'> -->
+<import src="../md/md.wxml" />
+<!-- <view class='rearch-bar scroll-set'>
+  <navigator open-type="navigateBack" hover-class="none">
+    <image class='back' src='../../img/back.svg'></image>
+  </navigator>
+  <view class='rearch-right'>
+    <view class='input-warp'>
+      <image class='rearch' src='../../img/search.svg'></image>
+      <input type='text' disabled='true' bindtap='to_search' placeholder='羽绒服清洗'></input>
+    </view>
+    <text class='rearch-text' bindtap='index'>搜索</text>
+  </view>
+</view> -->
+<!--mune-top  -->
+<scroll-view class='top-scroll' scroll-x="true" style="width: 100%">
+  <view class='top-mune'>
+    <view wx:for="{{bk.taglist}}" wx:for-item="i" wx:for-index="ind" data-ind="{{ind}}" data-id="{{i.id}}" bindtap='menu_top' class="{{i.id == menu_top_num ? 'select':''}}">{{i.title}}</view>
+  </view>
+</scroll-view>
+<!--main-con  -->
+<view class="main-con">
+  <!--menu-left  -->
+  <scroll-view scroll-y class='main-left' style='height:{{winheight-((170)*rpx)}}px'>
+    <view wx:for="{{bk.cat}}" wx:for-item="i" data-id='{{i.id}}' bindtap='menu_left' wx:if="{{menu_top_num == i.tagid}}" class="num-left {{i.id == menu_left_num ? 'select':''}}">
+      <text>{{i.title}}</text>
+      <!-- <view class='ball-number'>3</view> -->
+    </view>
+    <view class="num-left {{9527 == menu_left_num ? 'select':''}}" wx:if="{{menu_top_num ==1 || menu_top_num==2}}" data-id='9527' bindtap='menu_left'>洗护工序</view>
+  </scroll-view>
+  <!--menu-right  -->
+  <scroll-view class='main-right' scroll-y style='height:{{winheight-((170)*rpx)}}px'>
+    <view class='mune-l-warp'>
+      <view class='bar' wx:for="{{bk.goods}}" wx:for-item="i" wx:for-index="ind" wx:if="{{i.catid == menu_left_num}}">
+        <image class='bk-img' src='{{i.picture}}' lazy-load="true"></image>
+        <view class='bar-right'>
+          <view class='right-conn'>
+            <view class='conn-left'>
+              <view class='bar-name'>{{i.name}}
+                <text class='small' wx:if="{{menu_top_num == 5}}">{{i.attr[1].value}}</text>
+              </view>
+              <view class='cl-tips' wx:if="{{menu_top_num == 5}}">
+                <view>{{i.attr[0].value}}</view>
+              </view>
+              <view class='price-warp'>
+                <view class='price-now'>{{i.price}}{{menu_top_num == 5 ? ' /袋':''}}</view>
+              </view>
+            </view>
+            <view class='main-bom-right'>
+              <image src='../../img/-.svg' data-ind="{{ind}}" data-type='0' bindtap='num' wx:if="{{i.num != 0}}"></image>
+              <view wx:if="{{i.num != 0}}">{{i.num}}</view>
+              <image src='../../img/+.svg' data-ind="{{ind}}" data-type='1' bindtap='num'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--窗帘清洗备注说明  -->
+    <view class='tip-table' wx:if="{{menu_top_num == 5}}">
+      <view wx:for="{{tip_table}}">{{item}}</view>
+    </view>
+    <!--洗护工序  -->
+    <template wx:if="{{menu_left_num ==9527}}" is="md" data="{{work , menu_top_num}}" />
+    <!--footer保障  -->
+    <view class='guar-footer'>
+      <view class='guar-ball'>
+        <view wx:for="{{guar}}" wx:for-item="i">
+          <view class='guar-img'>
+            <image src='../../img/{{i.img}}.svg'></image>
+          </view>
+          <view class='guar-name'>{{i.title}}</view>
+        </view>
+      </view>
+      <view class='guar-text'>
+        <view>羽绒服、棉服等厚重衣物预计3-5天送回</view>
+        <view>皮衣、裘衣预计7-9天送回</view>
+        <!-- <navigator url="/pages/agreement/agreement?type=0" open-type="navigateTo" class='books' hover-class='none'>《用户协议》</navigator> -->
+      </view>
+    </view>
+
+  </scroll-view>
+</view>
+<!-- </view> -->
+<!-- </scroll-view> -->
+<!--footer  -->
+<view class='footer'>
+  <view class='foot-left'>
+    <view class='ball' bindtap='xy'>
+      <image src='../../img/basket.svg'></image>
+      <view class='ball-num' wx:if="{{total_num>0}}">{{total_num}}</view>
+    </view>
+    <view class='foot-price'>
+      <view class='foot-price-warp'>
+        <!-- <view class='yg-price'>预估价格</view> -->
+        <view class='hj-price' wx:if="{{total_price>0}}">￥{{total_price}}</view>
+        <!-- <view class='yj-price'>
+          <text>￥55</text>
+          <view class='peice-del'></view>
+        </view> -->
+      </view>
+      <view class='ps-price' wx:if="{{total_price<48 }}">还差{{48-total_price}}元免运费</view>
+      <view class='ps-price' wx:if="{{total_price>=48 }}">满48元免运费</view>
+    </view>
+  </view>
+  <navigator class='function-btn' url="/pages/make/make" open-type="navigateTo">预约取件</navigator>
+</view>
+<!--洗衣篮  -->
+<view class='mark-xy' hidden="{{xy == 1 ? false:true}}" style='height:{{winheight-((108)*rpx)}}px;'>
+  <view class='tab-xy' bindtap='xy'></view>
+  <view class='xy-con'>
+    <view class='xy-con-top'>
+      <view class='top-left'>洗衣篮</view>
+      <view class='top-right' bindtap='remove_ball'>
+        <image src='../../img/del-b.svg'></image>
+        <view>清空洗衣篮</view>
+      </view>
+    </view>
+    <scroll-view class='xy-con-bar-warp' scroll-y style="height:{{4*126}}rpx">
+      <view class='xy-con-bar' wx:for="{{bk.goods}}" wx:for-item="i" wx:for-index="ind" wx:if="{{i.num>0}}">
+        <view class='con-bar-left'>
+          <image src='{{i.picture}}'></image>
+          <text>{{i.name}}</text>
+        </view>
+        <view class='con-bar-right'>
+          <view class='con-price'>￥{{i.price*i.num}}</view>
+          <view class='number-bar'>
+            <image src='../../img/-.svg' data-ind="{{ind}}" data-type='0' bindtap='num' wx:if="{{i.num != 0}}"></image>
+            <view class='con-number' wx:if="{{i.num != 0}}">{{i.num}}</view>
+            <image src='../../img/+.svg' data-ind="{{ind}}" data-type='1' bindtap='num'></image>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--about.wxml-->
+<!--<view class="about-banner"></view>-->
+  <image class="banner" src="https://www.qiaolibeilang.com/public/xcx/about_banner.jpg"></image>
+  <!-- <view bindtap="link">link</view> -->
+  <view class="about-text">
+    <view class="p">
+      深圳市乔利贝朗科技有限公司是一家朝气蓬勃的年轻团队创业公司，拥有雄厚的资金支持，有一流的技术开发团队，有专业资深的品牌策划团队，亲和的客服团队，贴心的企业管理团队，严谨的洗护团队，高效的物流运输团队；公司创立以来，始终致力于成为中国乃至世界一流的科技公司，为我国信息网络科技发展贡献一份力量。为公司成为专业领域的创新者和领导者打下坚实的基石。
+    </view> 
+    <image class="about-main" src="https://www.qiaolibeilang.com/public/xcx/about_main.jpg"></image>
+    <view class="p">
+      “宿洗”是乔利贝朗科技有限公司旗下品牌，秉承着“专业的洗护，贴心的服务，用心的维护”的核心理念，将传统洗护服务和现代化信息科技相结合，构建一个专业、高效、贴心的洗护平台。宿洗针对的是各城市酒店的消费者，我们制定了一套特定的洗护系统，酒店周边将会遍布宿洗洗护点，有严格专业的洗护流程和独立的物流管理系统，宿洗承接的每一单都在与时间赛跑，我们要做到以最快的速度、最优的质量为消费者送去最贴心的服务;保证消费者在酒店高流动性的空隙，优质便捷、轻松愉悦的享受宿洗带来的高品质、高效率的全新定制的洗护体验。
+    </view>
+  </view>
