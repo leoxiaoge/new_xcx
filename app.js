@@ -38,8 +38,8 @@ App({
   // },
   //以下为自己手写代码
   url: {
-    url_api:'https://www.qiaolibeilang.com/eapi',//接口地址前缀
-    url_img:'https://www.qiaolibeilang.com/public/new_xcx',//图片地址前缀
+    url_api:'https://www.anlileo.com/eapi',//接口地址前缀
+    url_img:'https://www.anlieleo.com/public/new_xcx',//图片地址前缀
   },
   alert: function (text) {
     wx: wx.showModal({
